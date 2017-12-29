@@ -1,0 +1,15 @@
+[
+  {
+    "value": "pnr",
+    "synonyms": [
+      "pnr",
+      "Passenger Name Record"
+    ]
+  },
+  {
+    "value": "booking status",
+    "synonyms": [
+      "booking status"
+    ]
+  }
+]

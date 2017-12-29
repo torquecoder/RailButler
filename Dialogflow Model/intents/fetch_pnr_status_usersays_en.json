@@ -1,0 +1,61 @@
+[
+  {
+    "id": "083695fe-7a0a-493a-88f8-cee7a3c0df98",
+    "data": [
+      {
+        "text": "find my ",
+        "userDefined": false
+      },
+      {
+        "text": "Passenger Name Record",
+        "alias": "PNR",
+        "meta": "@PNR",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "dac1d7a9-3f67-4dbf-b438-01cc98eac7d2",
+    "data": [
+      {
+        "text": "find my ",
+        "userDefined": false
+      },
+      {
+        "text": "pnr",
+        "alias": "PNR",
+        "meta": "@PNR",
+        "userDefined": false
+      },
+      {
+        "text": " status",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "6f450700-47a9-4ad2-91b9-829723b213c9",
+    "data": [
+      {
+        "text": "fetch my ",
+        "userDefined": false
+      },
+      {
+        "text": "pnr",
+        "alias": "PNR",
+        "meta": "@PNR",
+        "userDefined": false
+      },
+      {
+        "text": " status",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  }
+]

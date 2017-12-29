@@ -1,0 +1,57 @@
+{
+  "id": "0fa03040-9cfc-4dcc-ae4a-4e325591f0a6",
+  "name": "fetch_pnr_status",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "fetch_pnr_status",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0d13b912-24d2-44eb-bf36-a6cbf9342c10",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please tell your PNR number."
+            },
+            {
+              "lang": "en",
+              "value": "May I have your PNR number?"
+            }
+          ],
+          "isList": true
+        },
+        {
+          "id": "14e620a4-39d5-4c76-bfb6-6b4405c0b85d",
+          "required": false,
+          "dataType": "@PNR",
+          "name": "PNR",
+          "value": "$PNR",
+          "isList": false
+        }
+      ],
+      "messages": [],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1514452098,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "GOOGLE_ASSISTANT_WELCOME"
+    },
+    {
+      "name": "GOOGLE_ASSISTANT_WELCOME"
+    }
+  ]
+}
