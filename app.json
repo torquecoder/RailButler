@@ -1,0 +1,6 @@
+{
+    "name": "RailButler",
+    "description": "Google action for fetching details related to your Indian railways journey",
+    "repository": "https://github.com/torquecoder/RailButler",
+    "keywords": ["railbutler", "python", "googleaction"]
+}
