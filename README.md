@@ -1,2 +1,2 @@
 # RailButler
-:octocat::iphone:Google action for fetching your PNR staus :railway_car: :speaker:
+:octocat::iphone:Google action for fetching details related to your Indian railways journey:railway_car: :speaker:
