@@ -15,9 +15,10 @@ def find_action():
 
 
 def fetch_pnr_status(PNR):
-    PNR = PNR.replace('-','')
-    PNR = PNR.replace(' ','')
-    URL = 'https://api.railwayapi.com/v2/pnr-status/pnr/' + PNR + '/apikey/' + config.RAILWAY_API_KEY
+    PNR = PNR.replace('-', '')
+    PNR = PNR.replace(' ', '')
+    URL = 'https://api.railwayapi.com/v2/pnr-status/pnr/' + PNR + \
+        '/apikey/' + config.RAILWAY_API_KEY
 
     json_response = requests.get(URL, verify=True)
     json_data = json_response.json()
@@ -36,6 +37,7 @@ def fetch_pnr_status(PNR):
         "source": "fetch_pnr_status"
     }
     return jsonify(answer)
+
 
 port = int(os.environ.get("PORT", 5000))
 app.run(host='0.0.0.0', port=port)
