@@ -23,20 +23,30 @@ def fetch_pnr_status(PNR):
     json_response = requests.get(URL, verify=True)
     json_data = json_response.json()
 
-    speech = ""
-    idx = 1
-    for passenger_detail in json_data['passengers']:
-        speech += 'Status for passenger ' + str(idx) + ' is '
-        speech += passenger_detail['booking_status']
-        speech += '.\n'
-        idx += 1
+    if json_data['response_code'] == '200':
+        speech = ""
+        idx = 1
+        for passenger_detail in json_data['passengers']:
+            speech += 'Status for passenger ' + str(idx) + ' is '
+            speech += passenger_detail['booking_status']
+            speech += '.\n'
+            idx += 1
 
-    answer = {
-        'speech': speech,
-        'displayText': speech,
-        'source': 'fetch_pnr_status'
-    }
-    return jsonify(answer)
+        answer = {
+            'speech': speech,
+            'displayText': speech,
+            'source': 'fetch_pnr_status'
+        }
+        return jsonify(answer)
+
+    else:
+        speech = 'This PNR is invalid. Please try again.'
+        answer = {
+            'speech': speech,
+            'displayText': speech,
+            'source': 'fetch_pnr_status'
+        }
+        return jsonify(answer)
 
 
 port = int(os.environ.get('PORT', 5000))
