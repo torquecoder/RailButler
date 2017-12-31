@@ -25,19 +25,19 @@ def fetch_pnr_status(PNR):
 
     speech = ""
     idx = 1
-    for passenger_detail in json_data["passengers"]:
+    for passenger_detail in json_data['passengers']:
         speech += 'Status for passenger ' + str(idx) + ' is '
         speech += passenger_detail['booking_status']
         speech += '.\n'
         idx += 1
 
     answer = {
-        "speech": speech,
-        "displayText": speech,
-        "source": "fetch_pnr_status"
+        'speech': speech,
+        'displayText': speech,
+        'source': 'fetch_pnr_status'
     }
     return jsonify(answer)
 
 
-port = int(os.environ.get("PORT", 5000))
+port = int(os.environ.get('PORT', 5000))
 app.run(host='0.0.0.0', port=port)
