@@ -1,0 +1,47 @@
+{
+  "id": "6f17a0bd-ebec-4540-96cc-1c59b98725c4",
+  "name": "welcome_intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "d2418106-1253-4dae-b2ad-cda3bd87770a",
+          "required": false,
+          "dataType": "@railbutler",
+          "name": "railbutler",
+          "value": "$railbutler",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "Hello! What would you like to do?",
+            "Hi! how may I help you?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "google": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1514716899,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

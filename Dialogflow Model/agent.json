@@ -1,6 +1,7 @@
 {
-  "description": "Google action for fetching your details related to you Indian railways journey",
+  "description": "Google action for fetching details related to your Indian railways journey",
   "language": "en",
+  "activeAssistantAgents": [],
   "disableInteractionLogs": false,
   "googleAssistant": {
     "googleAssistantCompatible": true,
@@ -20,7 +21,7 @@
   },
   "defaultTimezone": "Asia/Colombo",
   "webhook": {
-    "url": "https://a2bba643.ngrok.io/railbutler",
+    "url": "https://railbutler.herokuapp.com/railbutler",
     "headers": {
       "": ""
     },

@@ -46,12 +46,5 @@
   "webhookForSlotFilling": false,
   "lastUpdate": 1514452098,
   "fallbackIntent": false,
-  "events": [
-    {
-      "name": "GOOGLE_ASSISTANT_WELCOME"
-    },
-    {
-      "name": "GOOGLE_ASSISTANT_WELCOME"
-    }
-  ]
+  "events": []
 }
